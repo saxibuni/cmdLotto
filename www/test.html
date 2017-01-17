@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+
+			var nodes =[
+    {id:1, pId:0, name:"文件夹", open:true},
+    {id:11, pId:1, name:"收件箱"},
+    {id:111, pId:11, name:"收件箱1"},
+    {id:112, pId:111, name:"收件箱2"},
+    {id:12, pId:1, name:"垃圾邮件"},
+    {id:13, pId:1, name:"草稿"},
+    {id:14, pId:1, name:"已发送邮件"},
+    {id:15, pId:1, name:"已删除邮件"},
+    {id:3, pId:0, name:"快速视图"},
+    {id:31, pId:3, name:"文档"},
+    {id:32, pId:3, name:"照片"}
+  ];
+
+
+
+    //将节点集合拼装成树形结构
+    function getTree(nodes) {
+        var pNodes = [];
+        for (var i = 0; i < nodes.length; i++) {
+            if (isRootNode(nodes[i])) {
+                pNodes.push(nodes[i]);
+            }
+        }
+        getComplexNodes(pNodes, nodes);
+		console.log(pNodes);
+
+    }
+
+    //获取复杂节点
+    function getComplexNodes(pNodes, sourceNodes) {
+        for (var i = 0; i < pNodes.length; i++) {
+            for (var j = 0; j < sourceNodes.length; j++) {
+                if (sourceNodes[j].pId == pNodes[i].id) {
+                    if (!pNodes[i].children) {
+                        pNodes[i].children = [sourceNodes[j]];
+                        getAppendChild(sourceNodes[j], sourceNodes);
+                    }
+                    else {
+                        pNodes[i].children.push(sourceNodes[j]);
+                        getAppendChild(sourceNodes[j], sourceNodes);
+                    }
+                }
+            }
+        }
+    }
+
+    //获取复杂节点辅助方法
+    function getAppendChild(node, sourceNodes) {
+        for (var i = 0; i < sourceNodes.length; i++) {
+            if (sourceNodes[i].pId == node.id) {
+                if (!node.children) {
+                    node.children = [sourceNodes[i]];
+                    getAppendChild(sourceNodes[i], sourceNodes);
+                }
+                else {
+                    node.children.push(sourceNodes[i]);
+                    getAppendChild(sourceNodes[i], sourceNodes);
+                }
+            }
+        }
+    }
+
+
+    //判断是否为根节点
+	function isRootNode(node){
+		for (var i=0;i<nodes.length;i++) {
+			if (node.pId==nodes[i].id) {  //不是跟节点
+				return false;
+			}
+		}
+		return true;
+	}
+
+
+getTree(nodes);
+
+
+
+
+
+    /*  Page对象貌似可以不需要   该对象操作内容不太多  可以放到子类中实现 */
+var Page=function(){
+    this.isInit=false;
+}
+
+Page.prototype.init=function(){
+    this.isInit=true;
+}
+
+Page.prototype.load=function(){
+    if(!this.isInit) this.init();
+}
+
+Page.prototype.upload=function(){
+
+}
+
+
+    var t1=new Page();
+    var t2=new Page();
+
+    t1.init(); console.log(t1.isInit);
+    console.log(t2.isInit);
+
+		</script>
+
+
+
+        <script type="text/javascript" charset="utf-8" src="appframework-3.0/jquery-2.1.1.js"></script>
+
+                <script type="text/javascript" charset="utf-8" src="appframework-3.0/fastclick.js"></script>
+
+        <script type="text/javascript">
+        $(function(){
+
+            $("#test").blur(function(){
+                alert(123);
+            });
+
+            $(document.body).click(function(){
+                console.log("123");
+            })
+        })
+
+
+ var count = 0; 
+ function show(arr) { 
+     document.write("P<sub>" + ++count + "</sub>: " + arr + "<br />"); 
+ } 
+ function perm(arr) { 
+     var result = new Array(arr.length); 
+    var fac = 1; 
+     for (var i = 2; i <= arr.length; i++) 
+         fac *= i; 
+    for (index = 0; index < fac; index++) { 
+         var t = index; 
+         for (i = 1; i <= arr.length; i++) { 
+            var w = t % i; 
+             for (j = i - 1; j > w; j--) 
+                result[j] = result[j - 1]; 
+            result[w] = arr[i - 1]; 
+            t = Math.floor(t / i); 
+        } 
+         show(result); 
+     } 
+ } 
+  perm("1234".split("")); 
+ 
+            
+        </script>
+
+	</head>
+	<body>
+		<table>
+      <tr><td><input type="text"   id="test" maxlength="4"  gameType="123" /> </td></tr>      
+        </table>
+
+               <input type="text"   />
+
+
+        <div style="height:200px;width:200px;background-color:red;"></div>
+                <div style="height:200px;width:200px;background-color:red;"></div>
+        <div style="height:200px;width:200px;background-color:red;"></div>
+
+    <a href="#2rwerwe">asdf</a>
+
+	</body>
+</html>

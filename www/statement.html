@@ -1,0 +1,86 @@
+<div id="page_statement">
+
+	<div class="bottom">
+	 	<a href="javascript:;" id="thisWeek" class="current" key="THIS_WEEK">This Week</a>
+		<a href="javascript:;" id="lastWeek" class="other" key="LAST_WEEK">Last Week</a>
+	</div>
+
+	<div id="statement_list" style="margin-top:1rem;">
+		<!--
+		<div class="statement">
+			<table>
+				<tr><td>Date:</td><td>2015-09-21</td></tr>
+				<tr><td>Turnover:</td><td>600.00</td></tr>
+				<tr><td>Comm:</td><td>55</td></tr>
+				<tr><td>Pay Out:</td><td>7876</td></tr>
+				<tr><td>Win/Lose:</td><td>2123</td></tr>
+				<tr><td>Settle:</td><td>2123</td></tr>
+				<tr><td>Balance:</td><td>345</td></tr>
+			</table>
+		</div>
+		-->
+	</div>
+
+</div>
+
+<style>
+	
+	#page_statement .statement{
+		padding: 0;
+		border: 0.2rem solid #4c6888;
+		margin: 0.5rem 0;
+	}
+
+	#page_statement div table{
+		margin: 0;
+	}
+
+	#page_statement div table td{
+		height: 2.5rem;
+		padding-left: 2.5rem;
+		line-height: 2.5rem;
+		background: #f2f2f2;
+		font-size: 1.2rem;
+		border: none;
+		text-align: left;
+	}
+
+	#page_statement div table td:first-child{
+		background: #e5e5e5;
+		width: 40%;
+		border-right:0.15rem solid #d5d5d5;
+	}
+
+
+
+
+	#page_statement .bottom{
+		background-color: #758a9f;
+		height: 3rem;
+		left: 0.5rem;
+		right: 0.5rem;
+	}
+
+	#page_statement .bottom a{
+		width: 50%;
+		display: inline-block;
+		float: left;
+		font-size: 1.2rem;
+		text-align: center;
+		line-height: 3rem;	
+	}
+
+	#page_statement .bottom .current{
+		background-color: #6697cf;
+		color: #f4f4f4;
+		height: 100%;
+		border: none;
+	}
+
+	#page_statement .bottom .other{
+		background-color: #B8D0EA;
+		color: #1a1a1a;
+		height: 100%;
+	}
+</style>
+

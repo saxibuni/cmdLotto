@@ -1,0 +1,30 @@
+会员
+http://staging.cmdlotto.net/index.html
+usd:I0000000 pwd:000000
+KK000000  000000
+
+
+
+代理
+http://ag.staging.cmdlotto.net/
+usd: 4ddemo pwd: 000000
+
+
+
+测试STAGEMENT
+T1888002 000000
+
+http://m.staging.cmdlotto.net:9065/t4_mock.html
+
+
+
+
+    <content src="http://192.168.0.61:8010/cmdLotto_mobile/publish/android.asp" />
+    <allow-navigation href="*" />
+
+
+
+cordova-plugin-bluetoothle
+
+cordova-plugin-broadcaster
+cordova-plugin-datecs-printer

@@ -1,0 +1,27 @@
+
+
+#afui .view header{
+	height:4.8rem;
+	line-height:6rem;
+}
+
+
+header .menuButton{
+    top: 1.7rem;
+}
+
+header .backMenu{
+	top:2.1rem;
+}
+
+.view header h1{
+	height:inherit;
+	font-size:1.5rem;
+	width: 70%;
+	left: 15%;
+	padding:0;
+}
+
+nav .acctinfo {
+    margin-top: 2rem;
+}

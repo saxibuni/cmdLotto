@@ -1,0 +1,21 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-websocket": {
+            "PACKAGE_NAME": "com.cmdlotto"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.cmdlotto"
+        },
+        "cordova-plugin-bluetooth-serial": {
+            "PACKAGE_NAME": "com.cmdlotto"
+        }
+    },
+    "dependent_plugins": {}
+}

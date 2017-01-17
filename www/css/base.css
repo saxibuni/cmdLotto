@@ -1,0 +1,222 @@
+
+body{
+	font-family: Arial;
+	color: #F4EFF2;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+table{
+	border-collapse: collapse;
+	width:100%;
+}
+
+.nega{
+	color: red;
+}
+
+.posi{
+	color: green;
+}
+
+.left{
+	float: left;
+}
+
+.right: {
+	float: right;
+}
+
+#afui .view footer{
+	background: #2B3D53;
+	height:3.5rem;
+	border:none;
+	line-height:3.5rem;
+}
+#afui .view header{
+	background: #49678B;
+	border:none;
+	height:3.5rem;
+	line-height:3.5rem;
+}
+
+/**header**/
+header .menuButton{
+    float: left;
+    width: 3rem;
+    height: 2.6rem;
+    background: url('images/menu_btn.png') no-repeat;
+    background-size: 1.875rem 1.3rem;
+    background-position: center;
+    top: 0.5rem;
+    right: -0.5rem;
+    cursor: pointer;
+}
+header .menuButton:after{
+	border:0;
+	content:none;
+}
+
+header .backMenu{
+	top:0.9rem;
+	right: 0.8rem;
+	float: right;
+	width:1.6rem;
+	height:1.5rem;
+	background:url('images/back.png') no-repeat;
+	background-size:1.6rem 1.5rem;
+	position: relative;
+	cursor: pointer;
+	display: none;
+}
+
+.view header h1{
+	height:inherit;
+	font-size:1.5rem;
+	width: 70%;
+	left: 15%;
+	padding:0;
+}
+.view header .backButton{
+	display:none;
+}
+
+/**footer**/
+footer .footLogo{
+	float:left;
+	width:7.57rem;
+	height:2rem;
+	background:url('images/footer_logo.png') no-repeat;
+	background-size:7.57rem 2rem;
+	top:0.7rem;
+	position:absolute;
+	margin-left:0.5rem;
+}
+footer .footText{
+	position:absolute;
+	right:0.5rem;
+	font-size:0.8rem;
+}
+
+/****panel********/
+#afui .panel{
+	background:#2B3D53;
+	padding:1rem 0.5rem;
+}
+
+.list{
+	margin: 0;
+}
+
+.list >li >a{
+	padding: 0;
+	margin: 0;
+}
+
+
+
+/*********nav****/
+nav{
+	width: 15rem;
+}
+
+#afui nav .panel{
+	background: #192535;
+	padding: 0;
+}
+
+nav .acctinfo{
+	margin-top: 1rem;
+	margin-left: 0.5rem;
+	color: #b2b2b2;
+	font-size: 0.75rem;
+	padding: 0.15rem;
+}
+
+nav .acctinfo li{
+	line-height: 1.5rem;
+}
+
+nav .acctinfo span{
+	margin-left: 1rem;
+}
+
+nav .acctinfo #uId{
+	font-size: 1.3rem;
+	color: #fabc2d;
+}
+
+nav .list li{
+	background: #192535;
+	font-size: 0.9rem;
+	color: #f2f2f2;
+	line-height: 3.5rem;
+	height: 3.5rem;
+	padding: 0 1.5rem;
+	border-color:#38475a;;
+}
+
+nav .list li:first-child{
+	border-top:#38475a solid 1px;
+	margin-top:0.8rem;
+}
+
+
+
+/*******************pop up*********************************/
+
+body .afPopup *{
+	color: #000;
+	font-size: 1.25rem !important;
+}
+
+body .afPopup{
+	border: solid 0.5rem #4A5E6F;
+	padding: 0 7%;
+	background: #EFEFEF;
+	width: 90%;
+	left: 5% !important;
+	text-align:center;
+	border-radius:0;
+}
+body .afPopup header{
+	font-weight: blod;
+	text-align: center;
+	padding: 0.5rem;
+	/*color: #fff !important;*/
+}
+body .afPopup footer{
+	padding-top: 0.2rem;
+	padding-bottom:1rem;
+}
+body .afPopup footer #cancel{
+	background:#FF9900;
+	color:#2A2F34;
+	border:0.25rem #FECB7F solid;
+	width:40%;
+}
+
+body .afPopup footer #action{
+	background:#FF9900;
+	color:#2A2F34;
+	border:0.25rem #FECB7F solid;
+	width:40%;
+}
+
+body .afPopup footer a,
+body .afPopup footer a.pressed{
+	width: auto;
+	padding: 0.416rem 0px !important;	
+	float: none;
+}
+
+
+
+

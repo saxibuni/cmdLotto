@@ -1,0 +1,128 @@
+﻿CurrentPwdIncorrect = 30000;     //当前密码不正确
+UserNotFound = 30001;            //Client　不存在
+UserInvalid = 30002;             //User　未激活
+UseridPwdIncorrect = 30003;      //用户名或密码错误
+
+UseridExists = 30005;            //添加记录时，记录已存在
+MemberReferralIdNoExists = 30006;            //添加记录时，记录推荐人不存在
+
+MemsessionlogNotFound = 30020;   //MemSessionLog不存在
+OldPasswordIncorrect = 30030;    //旧密码错误
+        
+MemCreditNotFound = 30032;            //余额记录不存在
+SysCurrencyNotFound = 30033;          //货币不存在
+
+InSufficientFunds = 30034;            //余额不足
+DepositAmtLessThanMinLimit = 30035;   //小于存款最小限制数额
+DepositAmtMoreThanMaxLimit = 30036;   //大于存款最大限制数额
+WithdrawAmtLessThanMinLimit = 30037;
+WithdrawAmtMoreThanMaxLimit = 30038;
+TransferAmtLessThanMinLimit = 30039;
+TransferAmtMoreThanMaxLimit = 30040;
+
+TransferAmtLessThanTargetLimit = 30041;
+MemPromotionNotFound = 30042;      //MemPromotion不存在
+SysCountryNotFound = 30043;
+
+ResetPassKeyInvalid = 30050;       //重置密码的url链接失效
+
+MemTranNotFound = 30060;
+
+BankInDetailNotFount = 30070;      //银行资料不存在
+BankInAccountAlreadyExist = 30071;      //银行账号已存在
+BankInDetailNoUse = 30072;      //没有可以使用的银行账号(可轮询次数为0)
+
+ValidateCodeIncorrect = 39999;     //验证码有误
+EmailInvalid = 40000;      //Email已存在
+UserNameInvalid = 40001;   //用户名已存在
+UserQQInvalid = 40002;   //用户QQ已存在
+UserNameIpInvalid = 40003;   //用户名字与Ip已存在
+UserContactInvalid = 40004;   //用户手机号已存在
+
+BankInfoNotFount = 40050;  //银行资料不存在
+TransferError = 40080;     //转账失败
+
+WrongInfomation = 40100;   //提交错误的信息(比如，ForgetPassword)
+NotUsedBonusCode = 40110;  //有正在使用的Bonus Code（不能同时使用两种优惠）
+FullNameInvalid = 40120;   //用户注册的full name不正确，相同CurrId不允许有相同的fullname
+PasswordBlank = 40121;
+SecureAnswerBlank = 40122;
+SecureQuestionBlank = 40123;
+PreLanguageBlank = 40124;
+CountryBlank = 40125;
+PhoneCountryCodeBlank = 40126;
+PhoneNumberBlank = 40127;
+CurrencyBlank = 40128;
+PreWalletBlank = 40129;
+ZipcodeBlank = 40130;
+AddressBlank = 40131;
+DobBlank = 40132;
+PasswordLetterBlank = 40135;   //密码必须包含字母
+PasswordDigitBlank = 40136;    //密码必须包含数字
+DobInvalid = 40232;    //比如，小于18岁，2013-02-31等
+AgeLessThan18 = 40233;
+NotUsedBonusCodeWb = 40234;   //WB活动
+
+
+
+BankIdBlank = 40133;
+BankAcctNoBlank = 40134;
+
+UserIdLocked = 40200;
+WithdrawAmountIsLocked = 40201;
+WithdrawAccountIsDuplicated = 40202;
+PromotionNotFound = 40300;
+PromotionCurrencyNotFound = 40301;
+InvalidFreeBet = 40302;
+PromotionDuplicated = 40303;
+PromotionOverLimit = 40306; //申请超过最高限制
+PromotionWalletCheckMin = 40307; //请检查最低钱包金额限制
+PromotionWBIsApply = 40308; //已申请过首存
+PromotionWaitingApprove = 40309; //申请优惠待审核
+
+RegisterMoreThanOneTime = 40310;
+PromotionMoreThanOneTime = 40311;
+PromotionNotTransfer = 40312;
+PromotionPendingApply = 40313;
+PromotionOverMaxTime = 40314;
+
+
+GamesToDeposit = 51020;       //游戏要存款才能玩
+
+SdpayPre=50000;                //SDPAY等待支付中
+SdpaySuccess=50001;            //SDPAY 支付成功
+SdpayFail=50002;               //SDPAY 支付失败或者超时
+SdPayOrderNotFind = 50003;     //SDPAY 订单没有发现
+UnpaidSdPayOrder = 50004;      //有未支付的订单
+
+UnWithdrawNotOk = 50005;        //有尚未完成的操作
+UnDespoitOrder = 50006;        //有尚未完成的操作
+
+UnEbPromotion = 10011;       //不能获取优惠或者其他错误
+
+UnEbpromotiontrue = 11111;       //参加首充或者获取EB活动
+InvalidParameter = 60001;        //无效的参数
+LettersOrContentIsOverLimit = 60002;       //输入内容过长
+
+AffUsersActivate = 600020;       //aff 客服激活用户
+
+AffUsersActivateEmail = 600021;       //aff 用户邮件激活
+
+
+Comision = 50008;       //判断是否在规定时间段内选择优惠类型
+SecurityCode = 40308;   //手机验证码是否正确
+DontDownClient = 40309; //没有下载客户端
+PromotionDewapoker = 40319; //DEWAPOKER优惠
+
+TranAmt = 40419; //转账金额小于1
+
+
+TelPhoneCount = 40427; //次数达到三次
+
+TelPhoneCountCode = 40428; //验证码不匹配
+
+TelPhoneCountCodeHou = 40429; //验证码超时
+
+TelPhoneCountCodeSpan = 40426; //未发送验证码
+[3:00:14 PM] yoonhun: 以上是error code
+[3:00:31 PM] yoonhun: 注册，名字必须是中文

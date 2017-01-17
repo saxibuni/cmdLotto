@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://www.npmjs.com/package/cordova-plugin-bluetooth-serial -->
+<html lang="en" class=" js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>cordova-plugin-bluetooth-serial</title>
+
+    <meta name="description" content="Bluetooth Serial Communication Plugin">
+    <meta name="keywords" content="ecosystem:cordova,arduino,ble,serial,bluetooth,cordova">
+    <meta name="twitter:url" content="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial">
+    <meta name="twitter:title" content="npm: cordova-plugin-bluetooth-serial">
+    <meta name="twitter:description" content="Bluetooth Serial Communication Plugin">
+
+
+  <meta http-equiv="cleartype" content="on">
+
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="description" content="npm is the package manager for javascript">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-1024x748.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-1536x2008.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-2048x1496.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-320x460.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-640x1096.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-640x920.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-768x1004.png">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-230x230.png" sizes="230x230">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/coast-228x228.png" sizes="228x228">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="https://www.npmjs.com/static/images/touch-icons/manifest.json">
+  <link rel="shortcut icon" href="https://www.npmjs.com/static/images/touch-icons/favicon.ico">
+  <link rel="yandex-tableau-widget" href="https://www.npmjs.com/static/images/touch-icons/yandex-browser-manifest.json">
+  <meta property="og:image" content="https://www.npmjs.com/static/images/touch-icons/open-graph.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="msapplication-TileColor" content="#cb3837">
+  <meta name="msapplication-TileImage" content="/static/images/touch-icons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/static/images/touch-icons/browserconfig.xml">
+  <meta name="theme-color" content="#cb3837">
+
+  <link rel="canonical" href="./cordova-plugin-bluetooth-serial_files/cordova-plugin-bluetooth-serial.html">
+  <link rel="stylesheet" media="all" href="./cordova-plugin-bluetooth-serial_files/index.d8a5905b.css">
+  <link rel="search" type="application/opensearchdescription+xml" href="https://www.npmjs.com/opensearch.xml" title="npm">
+  <link rel="stylesheet" href="./cordova-plugin-bluetooth-serial_files/css">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
+
+
+  <script id="hs-analytics" src="./cordova-plugin-bluetooth-serial_files/419727.js"></script><script async="" src="./cordova-plugin-bluetooth-serial_files/analytics.js"></script><script src="./cordova-plugin-bluetooth-serial_files/index.min.ee2d72f1.js"></script>
+
+<style>.autocomplete-container, .autocomplete-suggestions, #powered-by-constructor-io { width: 1482px !important }</style></head>
+
+<body itemscope="" itemtype="http://schema.org/WebSite" data-crumb="QBEeO4sSXogotD4pktpAPS2d0hyvMWoLAqrAFn6VJnN">
+  <meta itemprop="url" content="https://www.npmjs.com/">
+
+    <nav>
+      <div class="container">
+        <a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#" id="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">Neverending Programming Mistakes</a>
+        <a href="https://www.npmjs.com/npm/on-site">npm On-Site</a>
+        <a href="https://www.npmjs.com/npm/private-packages" data-event-trigger="click" data-event-name="private-modules-nav-link">npm Private Packages</a>
+        <a href="https://www.npmjs.com/npm/open-source">npm Open Source</a>
+        <a href="https://docs.npmjs.com/">documentation</a>
+        <a href="https://www.npmjs.com/support">support</a>
+      </div>
+    </nav>
+
+  <header>
+    <div id="npm-logo">
+      <a href="https://www.npmjs.com/"><img src="./cordova-plugin-bluetooth-serial_files/npm-logo.svg" alt="npm logo"></a>
+
+    </div>
+
+
+      <div id="user-info" class="anonymous">
+          <a href="https://www.npmjs.com/login"><img alt="" src="./cordova-plugin-bluetooth-serial_files/wombat-avatar-small.png"></a>
+          <ul class="single">
+              <li><a href="https://www.npmjs.com/signup">sign up</a> or <a href="https://www.npmjs.com/login">log in</a></li>
+          </ul>
+
+      </div>
+
+
+    <form id="npm-search" action="https://www.npmjs.com/search" method="get" itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction">
+      <meta itemprop="target" content="https://www.npmjs.com/search?q={q}">
+      <div id="site-search-container">
+          <input name="q" value="" type="search" id="site-search" placeholder="find packages" tabindex="1" autocorrect="off" autocapitalize="off" itemprop="query-input">
+      </div>
+      <input type="submit" id="site-search-submit">
+    </form>
+
+  </header>
+
+    <div class="container content">
+      
+<div class="content-column">
+
+  <h1 class="package-name">
+    <a href="./cordova-plugin-bluetooth-serial_files/cordova-plugin-bluetooth-serial.html" class="active">cordova-plugin-bluetooth-serial</a>
+      <i class="icon-public"></i>
+  </h1>
+  <p class="package-description">Bluetooth Serial Communication Plugin</p>
+
+  <form class="star">
+    <input type="hidden" name="name" value="cordova-plugin-bluetooth-serial">
+    <input id="star-input" type="checkbox" name="isStarred" value="true">
+    <label for="star-input" class="icon-star"></label>
+    <div class="honey">
+      <label>If you are a robot, enter text here</label>
+      <input type="text" autocomplete="off" name="honey">
+    </div>
+    
+      <input type="hidden" name="crumb" value="QBEeO4sSXogotD4pktpAPS2d0hyvMWoLAqrAFn6VJnN">
+  </form>
+
+  <div id="readme" class="markdown">
+      <h1 id="user-content-bluetooth-serial-plugin-for-phonegap" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#bluetooth-serial-plugin-for-phonegap">Bluetooth Serial Plugin for PhoneGap</a></h1>
+<p>This plugin enables serial communication over Bluetooth. It was written for communicating between Android or iOS and an Arduino.</p>
+<p>Android and Windows Phone use Classic Bluetooth.  iOS uses Bluetooth Low Energy.</p>
+<h2 id="user-content-supported-platforms" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#supported-platforms">Supported Platforms</a></h2>
+<ul>
+<li>Android</li>
+<li>iOS with <a href="http://redbearlab.com/">RedBearLab</a> BLE hardware, <a href="http://www.adafruit.com/products/1697">Adafruit Bluefruit LE</a>, <a href="http://www.lairdtech.com/Products/Embedded-Wireless-Solutions/Bluetooth-Radio-Modules/BL600-Series/#.VBI7AS5dUzI">Laird BL600</a>, or <a href="https://bluegiga.zendesk.com/entries/29185293--BGScript-spp-over-ble-AT-command-SPP-implementation-for-BLE">BlueGiga</a></li>
+<li>Windows Phone 8</li>
+<li>Browser (Testing only. See <a href="https://github.com/don/BluetoothSerial/blob/master/src/browser/bluetoothSerial.js">comments</a>.)</li>
+</ul>
+<p><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#supporting-other-ble-hardware">Supporting other Bluetooth Low Energy hardware</a></p>
+<h2 id="user-content-limitations" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#limitations">Limitations</a></h2>
+<ul>
+<li>The phone must initiate the Bluetooth connection</li>
+<li>iOS Bluetooth Low Energy requires iPhone 4S, iPhone5, iPod 5, or iPad3+</li>
+<li>Will <em>not</em> connect Android to Android<a href="https://github.com/don/BluetoothSerial/issues/50#issuecomment-66405396">*</a></li>
+<li>Will <em>not</em> connect iOS to iOS<a href="https://github.com/don/BluetoothSerial/issues/75#issuecomment-52591397">*</a></li>
+</ul>
+<h1 id="user-content-installing" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#installing">Installing</a></h1>
+<p>Install with Cordova cli</p>
+<pre><code>$ cordova plugin add cordova-plugin-bluetooth-serial
+</code></pre>
+<p>Note that this plugin's id changed from <code>com.megster.cordova.bluetoothserial</code> to <code>cordova-plugin-bluetooth-serial</code> as part of the migration from the <a href="http://plugins.cordova.io/">Cordova plugin repo</a> to <a href="https://www.npmjs.com/">npm</a>.</p>
+<h1 id="user-content-examples" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#examples">Examples</a></h1>
+<p>There are some <a href="https://github.com/don/BluetoothSerial/tree/master/examples">sample projects</a> included with the plugin.</p>
+<h1 id="user-content-api" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#api">API</a></h1>
+<h2 id="user-content-methods" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#methods">Methods</a></h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#connect">bluetoothSerial.connect</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#connectInsecure">bluetoothSerial.connectInsecure</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#disconnect">bluetoothSerial.disconnect</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#write">bluetoothSerial.write</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#available">bluetoothSerial.available</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#read">bluetoothSerial.read</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#readuntil">bluetoothSerial.readUntil</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#subscribe">bluetoothSerial.subscribe</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#unsubscribe">bluetoothSerial.unsubscribe</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#subscriberawdata">bluetoothSerial.subscribeRawData</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#unsubscriberawdata">bluetoothSerial.unsubscribeRawData</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#clear">bluetoothSerial.clear</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#list">bluetoothSerial.list</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#isenabled">bluetoothSerial.isEnabled</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#isconnected">bluetoothSerial.isConnected</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#readrssi">bluetoothSerial.readRSSI</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#showbluetoothsettings">bluetoothSerial.showBluetoothSettings</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#enable">bluetoothSerial.enable</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#discoverunpaired">bluetoothSerial.discoverUnpaired</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#setdevicediscoveredlistener">bluetoothSerial.setDeviceDiscoveredListener</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#cleardevicediscoveredlistener">bluetoothSerial.clearDeviceDiscoveredListener</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#setname">bluetoothSerial.setName</a></li>
+<li><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#setdiscoverable">bluetoothSerial.setDiscoverable</a></li>
+</ul>
+<h2 id="user-content-connect" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#connect">connect</a></h2>
+<p>Connect to a Bluetooth device.</p>
+<pre><code>bluetoothSerial.connect(macAddress_or_uuid, connectSuccess, connectFailure);
+</code></pre>
+<h3 id="user-content-description" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#description">Description</a></h3>
+<p>Function <code>connect</code> connects to a Bluetooth device.  The callback is long running.  Success will be called when the connection is successful.  Failure is called if the connection fails, or later if the connection disconnects. An error message is passed to the failure callback.</p>
+<h4 id="user-content-android" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#android">Android</a></h4>
+<p>For Android, <code>connect</code> takes a MAC address of the remote device.</p>
+<h4 id="user-content-ios" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#ios">iOS</a></h4>
+<p>For iOS, <code>connect</code> takes the UUID of the remote device.  Optionally, you can pass an <strong>empty string</strong> and the plugin will connect to the first BLE peripheral.</p>
+<h4 id="user-content-windows-phone" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#windows-phone">Windows Phone</a></h4>
+<p>For Windows Phone, <code>connect</code> takes a MAC address of the remote device. The MAC address can optionally surrounded with parenthesis. e.g. <code>(AA:BB:CC:DD:EE:FF)</code></p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>macAddress_or_uuid</strong>: Identifier of the remote device.</li>
+<li><strong>connectSuccess</strong>: Success callback function that is invoked when the connection is successful.</li>
+<li><strong>connectFailure</strong>: Error callback function, invoked when error occurs or the connection disconnects.</li>
+</ul>
+<h2 id="user-content-connectinsecure" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#connectinsecure">connectInsecure</a></h2>
+<p>Connect insecurely to a Bluetooth device.</p>
+<pre><code>bluetoothSerial.connectInsecure(macAddress, connectSuccess, connectFailure);
+</code></pre>
+<h3 id="user-content-description" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#description">Description</a></h3>
+<p>Function <code>connectInsecure</code> works like <a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#connect">connect</a>, but creates an insecure connection to a Bluetooth device.  See the <a href="http://goo.gl/1mFjZY">Android docs</a> for more information.</p>
+<h4 id="user-content-android" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#android">Android</a></h4>
+<p>For Android, <code>connectInsecure</code> takes a macAddress of the remote device.</p>
+<h4 id="user-content-ios" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#ios">iOS</a></h4>
+<p><code>connectInsecure</code> is <strong>not supported</strong> on iOS.</p>
+<h4 id="user-content-windows-phone" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#windows-phone">Windows Phone</a></h4>
+<p><code>connectInsecure</code> is <strong>not supported</strong> on Windows Phone.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>macAddress</strong>: Identifier of the remote device.</li>
+<li><strong>connectSuccess</strong>: Success callback function that is invoked when the connection is successful.</li>
+<li><strong>connectFailure</strong>: Error callback function, invoked when error occurs or the connection disconnects.</li>
+</ul>
+<h2 id="user-content-disconnect" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#disconnect">disconnect</a></h2>
+<p>Disconnect.</p>
+<pre><code>bluetoothSerial.disconnect([success], [failure]);
+</code></pre>
+<h3 id="user-content-description" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#description">Description</a></h3>
+<p>Function <code>disconnect</code> disconnects the current connection.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>success</strong>: Success callback function that is invoked when the connection is successful. [optional]</li>
+<li><strong>failure</strong>: Error callback function, invoked when error occurs. [optional]</li>
+</ul>
+<h2 id="user-content-write" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#write">write</a></h2>
+<p>Writes data to the serial port.</p>
+<pre><code>bluetoothSerial.write(data, success, failure);
+</code></pre>
+<h3 id="user-content-description" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#description">Description</a></h3>
+<p>Function <code>write</code> data to the serial port. Data can be an ArrayBuffer, string, array of integers, or a Uint8Array.</p>
+<p>Internally string, integer array, and Uint8Array are converted to an ArrayBuffer. String conversion assume 8bit characters.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>data</strong>: ArrayBuffer of data</li>
+<li><strong>success</strong>: Success callback function that is invoked when the connection is successful. [optional]</li>
+<li><strong>failure</strong>: Error callback function, invoked when error occurs. [optional]</li>
+</ul>
+<h3 id="user-content-quick-example" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#quick-example">Quick Example</a></h3>
+<pre><code>// string
+bluetoothSerial.write("hello, world", success, failure);
+
+// array of int (or bytes)
+bluetoothSerial.write([186, 220, 222], success, failure);
+
+// Typed Array
+var data = new Uint8Array(4);
+data[0] = 0x41;
+data[1] = 0x42;
+data[2] = 0x43;
+data[3] = 0x44;
+bluetoothSerial.write(data, success, failure);
+
+// Array Buffer
+bluetoothSerial.write(data.buffer, success, failure);
+</code></pre>
+<h2 id="user-content-available" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#available">available</a></h2>
+<p>Gets the number of bytes of data available.</p>
+<pre><code>bluetoothSerial.available(success, failure);
+</code></pre>
+<h3 id="user-content-description" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#description">Description</a></h3>
+<p>Function <code>available</code> gets the number of bytes of data available.  The bytes are passed as a parameter to the success callback.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>success</strong>: Success callback function that is invoked when the connection is successful. [optional]</li>
+<li><strong>failure</strong>: Error callback function, invoked when error occurs. [optional]</li>
+</ul>
+<h3 id="user-content-quick-example" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#quick-example">Quick Example</a></h3>
+<pre><code>bluetoothSerial.available(function (numBytes) {
+    console.log("There are " + numBytes + " available to read.");
+}, failure);
+</code></pre>
+<h2 id="user-content-read" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#read">read</a></h2>
+<p>Reads data from the buffer.</p>
+<pre><code>bluetoothSerial.read(success, failure);
+</code></pre>
+<h3 id="user-content-description" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#description">Description</a></h3>
+<p>Function <code>read</code> reads the data from the buffer. The data is passed to the success callback as a String.  Calling <code>read</code> when no data is available will pass an empty String to the callback.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>success</strong>: Success callback function that is invoked with the number of bytes available to be read.</li>
+<li><strong>failure</strong>: Error callback function, invoked when error occurs. [optional]</li>
+</ul>
+<h3 id="user-content-quick-example" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#quick-example">Quick Example</a></h3>
+<pre><code>bluetoothSerial.read(function (data) {
+    console.log(data);
+}, failure);
+</code></pre>
+<h2 id="user-content-readuntil" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#readuntil">readUntil</a></h2>
+<p>Reads data from the buffer until it reaches a delimiter.</p>
+<pre><code>bluetoothSerial.readUntil('\n', success, failure);
+</code></pre>
+<h3 id="user-content-description" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#description">Description</a></h3>
+<p>Function <code>readUntil</code> reads the data from the buffer until it reaches a delimiter.  The data is passed to the success callback as a String.  If the buffer does not contain the delimiter, an empty String is passed to the callback. Calling <code>read</code> when no data is available will pass an empty String to the callback.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>delimiter</strong>: delimiter</li>
+<li><strong>success</strong>: Success callback function that is invoked with the data.</li>
+<li><strong>failure</strong>: Error callback function, invoked when error occurs. [optional]</li>
+</ul>
+<h3 id="user-content-quick-example" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#quick-example">Quick Example</a></h3>
+<pre><code>bluetoothSerial.readUntil('\n', function (data) {
+    console.log(data);
+}, failure);
+</code></pre>
+<h2 id="user-content-subscribe" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#subscribe">subscribe</a></h2>
+<p>Subscribe to be notified when data is received.</p>
+<pre><code>bluetoothSerial.subscribe('\n', success, failure);
+</code></pre>
+<h3 id="user-content-description" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#description">Description</a></h3>
+<p>Function <code>subscribe</code> registers a callback that is called when data is received.  A delimiter must be specified.  The callback is called with the data as soon as the delimiter string is read.  The callback is a long running callback and will exist until <code>unsubscribe</code> is called.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>delimiter</strong>: delimiter</li>
+<li><strong>success</strong>: Success callback function that is invoked with the data.</li>
+<li><strong>failure</strong>: Error callback function, invoked when error occurs. [optional]</li>
+</ul>
+<h3 id="user-content-quick-example" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#quick-example">Quick Example</a></h3>
+<pre><code>// the success callback is called whenever data is received
+bluetoothSerial.subscribe('\n', function (data) {
+    console.log(data);
+}, failure);
+</code></pre>
+<h2 id="user-content-unsubscribe" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#unsubscribe">unsubscribe</a></h2>
+<p>Unsubscribe from a subscription.</p>
+<pre><code>bluetoothSerial.unsubscribe(success, failure);
+</code></pre>
+<h3 id="user-content-description" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#description">Description</a></h3>
+<p>Function <code>unsubscribe</code> removes any notification added by <code>subscribe</code> and kills the callback.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>success</strong>: Success callback function that is invoked when the connection is successful. [optional]</li>
+<li><strong>failure</strong>: Error callback function, invoked when error occurs. [optional]</li>
+</ul>
+<h3 id="user-content-quick-example" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#quick-example">Quick Example</a></h3>
+<pre><code>bluetoothSerial.unsubscribe();
+</code></pre>
+<h2 id="user-content-subscriberawdata" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#subscriberawdata">subscribeRawData</a></h2>
+<p>Subscribe to be notified when data is received.</p>
+<pre><code>bluetoothSerial.subscribeRawData(success, failure);
+</code></pre>
+<h3 id="user-content-description" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#description">Description</a></h3>
+<p>Function <code>subscribeRawData</code> registers a callback that is called when data is received. The callback is called immediately when data is received. The data is sent to callback as an ArrayBuffer. The callback is a long running callback and will exist until <code>unsubscribeRawData</code> is called.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>success</strong>: Success callback function that is invoked with the data.</li>
+<li><strong>failure</strong>: Error callback function, invoked when error occurs. [optional]</li>
+</ul>
+<h3 id="user-content-quick-example" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#quick-example">Quick Example</a></h3>
+<pre><code>// the success callback is called whenever data is received
+bluetoothSerial.subscribeRawData(function (data) {
+    var bytes = new Uint8Array(data);
+    console.log(bytes);
+}, failure);
+</code></pre>
+<h2 id="user-content-unsubscriberawdata" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#unsubscriberawdata">unsubscribeRawData</a></h2>
+<p>Unsubscribe from a subscription.</p>
+<pre><code>bluetoothSerial.unsubscribeRawData(success, failure);
+</code></pre>
+<h3 id="user-content-description" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#description">Description</a></h3>
+<p>Function <code>unsubscribeRawData</code> removes any notification added by <code>subscribeRawData</code> and kills the callback.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>success</strong>: Success callback function that is invoked when the connection is successful. [optional]</li>
+<li><strong>failure</strong>: Error callback function, invoked when error occurs. [optional]</li>
+</ul>
+<h3 id="user-content-quick-example" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#quick-example">Quick Example</a></h3>
+<pre><code>bluetoothSerial.unsubscribeRawData();
+</code></pre>
+<h2 id="user-content-clear" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#clear">clear</a></h2>
+<p>Clears data in the buffer.</p>
+<pre><code>bluetoothSerial.clear(success, failure);
+</code></pre>
+<h3 id="user-content-description" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#description">Description</a></h3>
+<p>Function <code>clear</code> removes any data from the receive buffer.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>success</strong>: Success callback function that is invoked when the connection is successful. [optional]</li>
+<li><strong>failure</strong>: Error callback function, invoked when error occurs. [optional]</li>
+</ul>
+<h2 id="user-content-list" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#list">list</a></h2>
+<p>Lists bonded devices</p>
+<pre><code>bluetoothSerial.list(success, failure);
+</code></pre>
+<h3 id="user-content-description" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#description">Description</a></h3>
+<h4 id="user-content-android" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#android">Android</a></h4>
+<p>Function <code>list</code> lists the paired Bluetooth devices.  The success callback is called with a list of objects.</p>
+<p>Example list passed to success callback.  See <a href="http://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getName()">BluetoothDevice</a> and <a href="http://developer.android.com/reference/android/bluetooth/BluetoothClass.html#getDeviceClass()">BluetoothClass#getDeviceClass</a>.</p>
+<pre><code>[{
+    "class": 276,
+    "id": "10:BF:48:CB:00:00",
+    "address": "10:BF:48:CB:00:00",
+    "name": "Nexus 7"
+}, {
+    "class": 7936,
+    "id": "00:06:66:4D:00:00",
+    "address": "00:06:66:4D:00:00",
+    "name": "RN42"
+}]
+</code></pre>
+<h4 id="user-content-ios" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#ios">iOS</a></h4>
+<p>Function <code>list</code> lists the discovered Bluetooth Low Energy peripheral.  The success callback is called with a list of objects.</p>
+<p>Example list passed to success callback for iOS.</p>
+<pre><code>[{
+    "id": "CC410A23-2865-F03E-FC6A-4C17E858E11E",
+    "uuid": "CC410A23-2865-F03E-FC6A-4C17E858E11E",
+    "name": "Biscuit",
+    "rssi": -68
+}]
+</code></pre>
+<p>The advertised RSSI <strong>may</strong> be included if available.</p>
+<h4 id="user-content-windows-phone" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#windows-phone">Windows Phone</a></h4>
+<p>Function <code>list</code> lists the paired Bluetooth devices.  The success callback is called with a list of objects.</p>
+<p>Example list passed to success callback for Windows Phone.</p>
+<pre><code>[{
+    "id": "(10:BF:48:CB:00:00)",
+    "name": "Nexus 7"
+}, {
+    "id": "(00:06:66:4D:00:00)",
+    "name": "RN42"
+}]
+</code></pre>
+<h3 id="user-content-note" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#note">Note</a></h3>
+<p><code>id</code> is the generic name for <code>uuid</code> or [mac]<code>address</code> so that code can be platform independent.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>success</strong>: Success callback function that is invoked with a list of bonded devices.</li>
+<li><strong>failure</strong>: Error callback function, invoked when error occurs. [optional]</li>
+</ul>
+<h3 id="user-content-quick-example" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#quick-example">Quick Example</a></h3>
+<pre><code>bluetoothSerial.list(function(devices) {
+    devices.forEach(function(device) {
+        console.log(device.id);
+    })
+}, failure);
+</code></pre>
+<h2 id="user-content-isconnected" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#isconnected">isConnected</a></h2>
+<p>Reports the connection status.</p>
+<pre><code>bluetoothSerial.isConnected(success, failure);
+</code></pre>
+<h3 id="user-content-description" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#description">Description</a></h3>
+<p>Function <code>isConnected</code> calls the success callback when connected to a peer and the failure callback when <em>not</em> connected.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>success</strong>: Success callback function, invoked when device connected.</li>
+<li><strong>failure</strong>: Error callback function, invoked when device is NOT connected.</li>
+</ul>
+<h3 id="user-content-quick-example" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#quick-example">Quick Example</a></h3>
+<pre><code>bluetoothSerial.isConnected(
+    function() {
+        console.log("Bluetooth is connected");
+    },
+    function() {
+        console.log("Bluetooth is *not* connected");
+    }
+);
+</code></pre>
+<h2 id="user-content-isenabled" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#isenabled">isEnabled</a></h2>
+<p>Reports if bluetooth is enabled.</p>
+<pre><code>bluetoothSerial.isEnabled(success, failure);
+</code></pre>
+<h3 id="user-content-description" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#description">Description</a></h3>
+<p>Function <code>isEnabled</code> calls the success callback when bluetooth is enabled and the failure callback when bluetooth is <em>not</em> enabled.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>success</strong>: Success callback function, invoked when Bluetooth is enabled.</li>
+<li><strong>failure</strong>: Error callback function, invoked when Bluetooth is NOT enabled.</li>
+</ul>
+<h3 id="user-content-quick-example" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#quick-example">Quick Example</a></h3>
+<pre><code>bluetoothSerial.isEnabled(
+    function() {
+        console.log("Bluetooth is enabled");
+    },
+    function() {
+        console.log("Bluetooth is *not* enabled");
+    }
+);
+</code></pre>
+<h2 id="user-content-readrssi" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#readrssi">readRSSI</a></h2>
+<p>Reads the RSSI from the connected peripheral.</p>
+<pre><code>bluetoothSerial.readRSSI(success, failure);
+</code></pre>
+<h3 id="user-content-description" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#description">Description</a></h3>
+<p>Function <code>readRSSI</code> calls the success callback with the rssi.</p>
+<p><strong>BLE only</strong> <em>This function is experimental and the API may change</em></p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>success</strong>: Success callback function that is invoked with the rssi value.</li>
+<li><strong>failure</strong>: Error callback function, invoked when error occurs. [optional]</li>
+</ul>
+<h3 id="user-content-quick-example" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#quick-example">Quick Example</a></h3>
+<pre><code>bluetoothSerial.readRSSI(
+    function(rssi) {
+        console.log(rssi);
+    }
+);
+</code></pre>
+<h2 id="user-content-showbluetoothsettings" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#showbluetoothsettings">showBluetoothSettings</a></h2>
+<p>Show the Bluetooth settings on the device.</p>
+<pre><code>bluetoothSerial.showBluetoothSettings(success, failure);
+</code></pre>
+<h3 id="user-content-description" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#description">Description</a></h3>
+<p>Function <code>showBluetoothSettings</code> opens the Bluetooth settings on the operating systems.</p>
+<h4 id="user-content-ios" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#ios">iOS</a></h4>
+<p><code>showBluetoothSettings</code> is not supported on iOS.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>success</strong>: Success callback function [optional]</li>
+<li><strong>failure</strong>: Error callback function, invoked when error occurs. [optional]</li>
+</ul>
+<h3 id="user-content-quick-example" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#quick-example">Quick Example</a></h3>
+<pre><code>bluetoothSerial.showBluetoothSettings();
+</code></pre>
+<h2 id="user-content-enable" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#enable">enable</a></h2>
+<p>Enable Bluetooth on the device.</p>
+<pre><code>bluetoothSerial.enable(success, failure);
+</code></pre>
+<h3 id="user-content-description" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#description">Description</a></h3>
+<p>Function <code>enable</code> prompts the user to enable Bluetooth.</p>
+<h4 id="user-content-android" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#android">Android</a></h4>
+<p><code>enable</code> is only supported on Android and does not work on iOS or Windows Phone.</p>
+<p>If <code>enable</code> is called when Bluetooth is already enabled, the user will not prompted and the success callback will be invoked.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>success</strong>: Success callback function, invoked if the user enabled Bluetooth.</li>
+<li><strong>failure</strong>: Error callback function, invoked if the user does not enabled Bluetooth.</li>
+</ul>
+<h3 id="user-content-quick-example" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#quick-example">Quick Example</a></h3>
+<pre><code>bluetoothSerial.enable(
+    function() {
+        console.log("Bluetooth is enabled");
+    },
+    function() {
+        console.log("The user did *not* enable Bluetooth");
+    }
+);
+</code></pre>
+<h2 id="user-content-discoverunpaired" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#discoverunpaired">discoverUnpaired</a></h2>
+<p>Discover unpaired devices</p>
+<pre><code>bluetoothSerial.discoverUnpaired(success, failure);
+</code></pre>
+<h3 id="user-content-description" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#description">Description</a></h3>
+<h4 id="user-content-android" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#android">Android</a></h4>
+<p>Function <code>discoverUnpaired</code> discovers unpaired Bluetooth devices. The success callback is called with a list of objects similar to <code>list</code>, or an empty list if no unpaired devices are found.</p>
+<p>Example list passed to success callback.</p>
+<pre><code>[{
+    "class": 276,
+    "id": "10:BF:48:CB:00:00",
+    "address": "10:BF:48:CB:00:00",
+    "name": "Nexus 7"
+}, {
+    "class": 7936,
+    "id": "00:06:66:4D:00:00",
+    "address": "00:06:66:4D:00:00",
+    "name": "RN42"
+}]
+</code></pre>
+<p>The discovery process takes a while to happen. You can register notify callback with <a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#setdevicediscoveredlistener">setDeviceDiscoveredListener</a>.
+You may also want to show a progress indicator while waiting for the discover proces to finish, and the sucess callback to be invoked.</p>
+<p>Calling <code>connect</code> on an unpaired Bluetooth device should begin the Android pairing process.</p>
+<h4 id="user-content-ios" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#ios">iOS</a></h4>
+<p><code>discoverUnpaired</code> is not supported on iOS. iOS uses Bluetooth Low Energy and <code>list</code> discovers devices without pairing.</p>
+<h4 id="user-content-windows-phone" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#windows-phone">Windows Phone</a></h4>
+<p><code>discoverUnpaired</code> is not supported on Windows Phone.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>success</strong>: Success callback function that is invoked with a list of unpaired devices.</li>
+<li><strong>failure</strong>: Error callback function, invoked when error occurs. [optional]</li>
+</ul>
+<h3 id="user-content-quick-example" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#quick-example">Quick Example</a></h3>
+<pre><code>bluetoothSerial.discoverUnpaired(function(devices) {
+    devices.forEach(function(device) {
+        console.log(device.id);
+    })
+}, failure);
+</code></pre>
+<h2 id="user-content-setdevicediscoveredlistener" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#setdevicediscoveredlistener">setDeviceDiscoveredListener</a></h2>
+<p>Register a notify callback function to be called during bluetooth device discovery. For callback to work, discovery process must
+be started with <a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#discoverunpaired">discoverUnpaired</a>.
+There can be only one registered callback.</p>
+<p>Example object passed to notify callback.</p>
+<pre><code>{
+    "class": 276,
+    "id": "10:BF:48:CB:00:00",
+    "address": "10:BF:48:CB:00:00",
+    "name": "Nexus 7"
+}
+</code></pre>
+<h4 id="user-content-ios-windows-phone" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#ios-windows-phone">iOS &amp; Windows Phone</a></h4>
+<p>See <a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#discoverunpaired">discoverUnpaired</a>.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>notify</strong>: Notify callback function that is invoked when device is discovered during discovery process.</li>
+</ul>
+<h3 id="user-content-quick-example" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#quick-example">Quick Example</a></h3>
+<pre><code>bluetoothSerial.setDeviceDiscoveredListener(function(device) {
+	console.log('Found: '+device.id);
+});
+</code></pre>
+<h2 id="user-content-cleardevicediscoveredlistener" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#cleardevicediscoveredlistener">clearDeviceDiscoveredListener</a></h2>
+<p>Clears notify callback function registered with <a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#setdevicediscoveredlistener">setDeviceDiscoveredListener</a>.</p>
+<h3 id="user-content-quick-example" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#quick-example">Quick Example</a></h3>
+<pre><code>bluetoothSerial.clearDeviceDiscoveredListener();
+</code></pre>
+<h2 id="user-content-setname" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#setname">setName</a></h2>
+<p>Sets the human readable device name that is broadcasted to other devices.</p>
+<pre><code>bluetoothSerial.setName(newName);
+</code></pre>
+<h4 id="user-content-android" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#android">Android</a></h4>
+<p>For Android, <code>setName</code> takes a String for the new name.</p>
+<h4 id="user-content-ios" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#ios">iOS</a></h4>
+<p>Not currently implemented.</p>
+<h4 id="user-content-windows-phone" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#windows-phone">Windows Phone</a></h4>
+<p>Not currently implemented.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>newName</strong>: Desired name of device.</li>
+</ul>
+<h3 id="user-content-quick-example" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#quick-example">Quick Example</a></h3>
+<pre><code>bluetoothSerial.setName("Really cool name");
+</code></pre>
+<h2 id="user-content-setdiscoverable" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#setdiscoverable">setDiscoverable</a></h2>
+<p>Makes the device discoverable by other devices.</p>
+<pre><code>bluetoothSerial.setDiscoverable(discoverableDuration);
+</code></pre>
+<h4 id="user-content-android" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#android">Android</a></h4>
+<p>For Android, <code>setDiscoverable</code> takes an int for the number of seconds device should be discoverable. A time of 0 will make it permanently discoverable.</p>
+<h4 id="user-content-ios" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#ios">iOS</a></h4>
+<p>Not currently implemented.</p>
+<h4 id="user-content-windows-phone" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#windows-phone">Windows Phone</a></h4>
+<p>Not currently implemented.</p>
+<h3 id="user-content-parameters" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#parameters">Parameters</a></h3>
+<ul>
+<li><strong>discoverableDuration</strong>: Desired number of seconds device should be discoverable for.</li>
+</ul>
+<h3 id="user-content-quick-example" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#quick-example">Quick Example</a></h3>
+<pre><code>bluetoothSerial.setDiscoverable(0);
+</code></pre>
+<h1 id="user-content-misc" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#misc">Misc</a></h1>
+<h2 id="user-content-where-does-this-work" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#where-does-this-work">Where does this work?</a></h2>
+<h3 id="user-content-android" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#android">Android</a></h3>
+<p>Current development is done with Cordova 4.2 on Android 5. Theoretically this code runs on PhoneGap 2.9 and greater.  It should support Android-10 (2.3.2) and greater, but I only test with Android 4.x+.</p>
+<p>Development Devices include</p>
+<ul>
+<li>Nexus 5 with Android 5</li>
+<li>Samsung Galaxy Tab 10.1 (GT-P7510) with Android 4.0.4 (see <a href="https://github.com/don/BluetoothSerial/issues/8">Issue #8</a>)</li>
+<li>Google Nexus S with Android 4.1.2</li>
+<li>Nexus 4 with Android 5</li>
+<li>Samsung Galaxy S4 with Android 4.3</li>
+</ul>
+<p>On the Arduino side I test with <a href="https://www.sparkfun.com/products/10393">Sparkfun Mate Silver</a> and the <a href="http://www.seeedstudio.com/depot/bluetooth-shield-p-866.html?cPath=19_21">Seeed Studio Bluetooth Shield</a>. The code should be generic and work with most hardware.</p>
+<p>I highly recommend <a href="http://www.adafruit.com/products/1588">Adafruit's Bluefruit EZ-Link</a>.</p>
+<h3 id="user-content-ios" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#ios">iOS</a></h3>
+<p><strong>NOTE: Currently iOS only works with RedBear Labs Hardware, Adafruit Bluefruit LE, Laird BL600, and BlueGiga UART services</strong></p>
+<p>This plugin was originally developed with Cordova 3.4 using iOS 7.x on an iPhone 5s connecting to a <a href="http://redbearlab.com/blemini">RedBearLab BLEMini</a>. Ensure that you have update the BLE Mini firmware to at least <a href="https://github.com/RedBearLab/Biscuit/tree/master/release">Biscuit-UART_20130313.bin</a>.</p>
+<p>Most development is now done with iOS 8 with Cordova 4.2 using <a href="http://redbearlab.com/bleshield/">RedBear Lab BLE Shield</a> or <a href="https://www.adafruit.com/product/2267">Adafruit Bluefruit LE Friend</a>.</p>
+<h3 id="user-content-supporting-other-ble-hardware" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#supporting-other-ble-hardware">Supporting other BLE hardware</a></h3>
+<p>For Bluetooth Low Energy, this plugin supports some hardware running known UART-like services, but can support any Bluetooth Low Energy hardware with a "serial like" service. This means a transmit characteristic that is writable and a receive characteristic that supports notification.</p>
+<p>Edit <a href="https://github.com/don/BluetoothSerial/blob/master/src/ios/BLEDefines.h">BLEdefines.h</a> and adjust the UUIDs for your service.</p>
+<p>See <a href="https://github.com/don/BluetoothSerial/issues/141#issuecomment-161500473">Issue 141</a> for details on how to add support for Amp'ed RF Technology BT43H.</p>
+<h2 id="user-content-props" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#props">Props</a></h2>
+<h3 id="user-content-android" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#android">Android</a></h3>
+<p>Most of the Bluetooth implementation was borrowed from the Bluetooth Chat example in the Android SDK.</p>
+<h3 id="user-content-ios" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#ios">iOS</a></h3>
+<p>The iOS code uses RedBearLab's <a href="https://github.com/RedBearLab/iOS/tree/master/BLEFramework/BLE">BLE_Framework</a>.</p>
+<h3 id="user-content-api" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#api">API</a></h3>
+<p>The API for available, read, readUntil was influenced by the <a href="https://github.com/arduino/BtSerial">BtSerial Library for Processing for Arduino</a></p>
+<h2 id="user-content-wrong-bluetooth-plugin" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#wrong-bluetooth-plugin">Wrong Bluetooth Plugin?</a></h2>
+<p>If you don't need <strong>serial</strong> over Bluetooth, try the <a href="https://github.com/phonegap/phonegap-plugins/tree/DEPRECATED/Android/Bluetooth/2.2.0">PhoneGap Bluetooth Plugin for Android</a> or perhaps <a href="https://github.com/tanelih/phonegap-bluetooth-plugin">phonegap-plugin-bluetooth</a>.</p>
+<p>If you need generic Bluetooth Low Energy support checkout my <a href="https://github.com/don/cordova-plugin-ble-central">Cordova BLE Plugin</a>.</p>
+<p>If you need BLE for RFduino checkout my <a href="https://github.com/don/cordova-plugin-rfduino">RFduino Plugin</a>.</p>
+<h2 id="user-content-what-format-should-the-mac-address-be-in" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#what-format-should-the-mac-address-be-in">What format should the Mac Address be in?</a></h2>
+<p>An example a properly formatted mac address is <code>AA:BB:CC:DD:EE:FF</code></p>
+<h2 id="user-content-feedback" class="deep-link"><a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial#feedback">Feedback</a></h2>
+<p>Try the code. If you find an problem or missing feature, file an issue or create a pull request.</p>
+
+  </div>
+
+</div>
+
+<div class="sidebar">
+
+    <div class="autoselect-wrapper npm-install icon-download">
+      <input type="text" value="npm i cordova-plugin-bluetooth-serial" readonly="">
+    </div>
+
+	<ul class="box">
+
+      <li class="last-publisher">
+          <a href="https://www.npmjs.com/~don">
+            <img src="https://s.gravatar.com/avatar/1f9450efc2ca7aeb2e6cc734d2b43870?size=100&default=retro" alt="don">
+            <span>don</span>
+          </a>
+          published
+          <span data-date="2015-12-03T04:05:52.060Z" data-date-format="relative">2 weeks ago</span>
+      </li>
+
+    <li>
+      <strong>0.4.5</strong>
+      is the latest
+        of 2 releases
+    </li>
+
+      <li>
+        <a href="https://github.com/don/BluetoothSerial">github.com/don/BluetoothSerial</a>
+      </li>
+
+
+      <li>
+          <a href="http://opensource.org/licenses/Apache-2.0">Apache-2.0</a>
+        <span> license</span>
+      </li>
+
+  </ul>
+
+    <h3 title="collaborators">
+      <a href="https://www.npmjs.com/package/cordova-plugin-bluetooth-serial/access">Collaborators</a>
+    </h3>
+
+    <ul class="humans collaborators">
+        <li>
+            <a href="https://www.npmjs.com/~don" rel="tipsy" original-title="don">
+                <img src="https://s.gravatar.com/avatar/1f9450efc2ca7aeb2e6cc734d2b43870?size=100&default=retro" alt="don">
+            </a>
+        </li>
+
+
+    </ul>
+
+    <h3>Stats</h3>
+    <ul class="box">
+
+        <li>
+          <strong class="pretty-number daily-downloads">33</strong>
+          downloads in the last day
+        </li>
+        <li>
+          <strong class="pretty-number weekly-downloads">191</strong>
+          downloads in the last week
+        </li>
+        <li>
+          <strong class="pretty-number monthly-downloads">764</strong>
+          downloads in the last month
+        </li>
+
+        <li id="issues" data-ghapi="https://api.github.com/repos/don/BluetoothSerial">
+          <span class="original">Have an issue? <a href="https://github.com/don/BluetoothSerial/issues">File it.</a></span>
+            <span class="enhanced" style="display:none">
+              <a href="https://github.com/don/BluetoothSerial/issues"></a> on GitHub
+            </span>
+        </li>
+
+        <li id="pull_requests" style="display:none">
+          <a href="https://github.com/don/BluetoothSerial/pulls"></a> on GitHub
+        </li>
+
+    </ul>
+
+      <h3>Try it out</h3>
+      <ul class="box">
+        <li class="tonicdev"><a href="https://tonicdev.com/npm/cordova-plugin-bluetooth-serial" target="_blank">Test cordova-plugin-bluetooth-serial in your browser.</a></li>
+      </ul>
+
+  <h3>Keywords</h3>
+  <p class="list-of-links">
+        <a href="https://www.npmjs.com/browse/keyword/ecosystem:cordova">ecosystem:cordova</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/arduino">arduino</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/ble">ble</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/serial">serial</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/bluetooth">bluetooth</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/cordova">cordova</a>
+  </p>
+
+  <h3>Dependencies </h3>
+  <p class="list-of-links">
+      None
+  </p>
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "cordova-plugin-bluetooth-serial",
+      "description": "Bluetooth Serial Communication Plugin",
+      "url": "https://www.npmjs.com/package/cordova-plugin-bluetooth-serial",
+      "keywords": "ecosystem:cordova,arduino,ble,serial,bluetooth,cordova",
+      "applicationCategory": "DeveloperApplication",
+      "offers": {
+         "@type": "Offer",
+         "price": "0.00"
+      }
+    }
+  </script>
+
+    <div class="hiring-container" data-template="sidebar"></div>
+
+</div>
+
+
+    </div>
+
+  <footer>
+
+    <div class="container">
+
+
+        <ul class="columnar">
+          <li>
+            <h3>You Need Help</h3>
+            <ul class="links">
+              <li><a href="https://docs.npmjs.com/">Documentation</a></li>
+              <li><a href="https://www.npmjs.com/support">Support / Contact Us</a></li>
+              <li><a href="http://status.npmjs.org/?__hstc=72727564.7e8ee78d617812b5f98e9bd3d45a55a2.1448955869573.1449647353419.1450249400695.4&__hssc=72727564.1.1450249400695&__hsfp=3385168177">Registry Status</a></li>
+              <li><a href="https://github.com/npm/newww/issues">Website Issues</a></li>
+              <li><a href="https://github.com/npm/npm/issues">CLI Issues</a></li>
+              <li><a href="https://www.npmjs.com/security">Security</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>About npm</h3>
+            <ul class="links">
+              <li><a href="https://www.npmjs.com/about">About npm, Inc</a></li>
+              <li><a href="https://www.npmjs.com/jobs">Jobs</a></li>
+              <li><a href="https://www.npmjs.com/npm-weekly">npm Weekly</a></li>
+              <li><a href="http://blog.npmjs.org/?__hstc=72727564.7e8ee78d617812b5f98e9bd3d45a55a2.1448955869573.1449647353419.1450249400695.4&__hssc=72727564.1.1450249400695&__hsfp=3385168177">Blog</a></li>
+              <li><a href="https://twitter.com/npmjs">Twitter</a></li>
+              <li><a href="https://github.com/npm">GitHub</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>Legal Stuff</h3>
+            <ul class="links">
+              <li><a href="https://www.npmjs.com/policies/terms">Terms of Use</a></li>
+              <li><a href="https://www.npmjs.com/policies/conduct">Code of Conduct</a></li>
+              <li><a href="https://www.npmjs.com/policies/disputes">Package Name Disputes</a></li>
+              <li><a href="https://www.npmjs.com/policies/privacy">Privacy Policy</a></li>
+              <li><a href="https://www.npmjs.com/policies/receiving-reports">Reporting Abuse</a></li>
+              <li><a href="https://www.npmjs.com/policies/">Other policies</a></li>
+            </ul>
+          </li>
+        </ul>
+
+
+    </div>
+
+    <div class="container centered">
+      <a href="https://www.npmjs.com/" id="npm-loves-you">
+        npm loves you
+      </a>
+    </div>
+
+  </footer>
+  
+  <script defer="" src="./cordova-plugin-bluetooth-serial_files/vendor.min.76ac749e.js"></script>
+  <script defer="" async="" src="./cordova-plugin-bluetooth-serial_files/3318080746.js"></script>
+  <script defer="" async="" src="./cordova-plugin-bluetooth-serial_files/elqCfg.min.js"></script><!-- Eloqua -->
+
+
+
+<!-- pid=4087 521aff2b0e9c89be6df6d5e0dad7c502d8b2ef7f https://www.npmjs.com www-11-west.internal.npmjs.com  -->
+</body></html>

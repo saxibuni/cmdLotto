@@ -1,0 +1,91 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"WebSocket\"><param name=\"android-package\" value=\"com.knowledgecode.cordova.websocket.WebSocket\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ],
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"BluetoothSerial\"><param name=\"android-package\" value=\"com.megster.cordova.BluetoothSerial\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-websocket": {
+            "PACKAGE_NAME": "com.cmdlotto"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.cmdlotto"
+        },
+        "cordova-plugin-bluetooth-serial": {
+            "PACKAGE_NAME": "com.cmdlotto"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-websocket/www/websocket.js",
+            "id": "cordova-plugin-websocket.websocket",
+            "pluginId": "cordova-plugin-websocket",
+            "clobbers": [
+                "WebSocket"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+            "id": "cordova-plugin-whitelist.whitelist",
+            "pluginId": "cordova-plugin-whitelist",
+            "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-bluetooth-serial/www/bluetoothSerial.js",
+            "id": "cordova-plugin-bluetooth-serial.bluetoothSerial",
+            "pluginId": "cordova-plugin-bluetooth-serial",
+            "clobbers": [
+                "window.bluetoothSerial"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-websocket": "0.12.0",
+        "cordova-plugin-whitelist": "1.2.0",
+        "cordova-plugin-bluetooth-serial": "0.4.5"
+    }
+}

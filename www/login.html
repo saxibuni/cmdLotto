@@ -1,0 +1,156 @@
+<div id="page_login">
+    <div class="container">
+        <center style="width:100%;">
+            <img src="css/images/login.gif" class="logo">
+        </center>
+        <form class="login">
+            <div>
+                <div class="const_left"><img src="css/images/user.gif"></div>
+                <div class="fitable_right">
+                    <input id="txtUserName" type="text" placeholder="Username" />
+                </div>
+            </div>
+            <div>
+                <div class="const_left"><img src="css/images/pwd.png"></div>
+                <div class="fitable_right">
+                    <input id="txtPWD" type="password" placeholder="Password" />
+                </div>
+            </div>
+            <input id="remember" type="checkbox" />
+            <label for="remember">Remember me</label>
+            <a id="btnLoginEn" href="javascript:;" class="button" data-ignore-pressed="true">English Login</a>
+            <a id="btnLoginTha" href="javascript:;" class="button" data-ignore-pressed="true">ไทยเข้าสู่ระบบ</a>
+        </form>
+        <div class="copyright">
+            <span>Copyright CMDLOTTO @ 2015</span>
+        </div>
+    </div>
+</div>
+<style>
+#page_login .container {
+    color: #B4BAC6;
+    padding-top: 4.5rem;
+}
+
+#page_login .logo {
+    width: 21rem;
+    height: 8rem;
+    margin-bottom: : 3rem;
+}
+
+#page_login .panel {
+    background: #2B3D53;
+    padding: 1rem 0.5rem;
+
+}
+
+#page_login .login {
+    padding: 2rem 4rem;
+}
+
+#page_login .login > div {
+    height: 3.5rem;
+    background: initial;
+    border: none;
+    border-bottom: 2px solid #3C4C63;
+    margin: 0;
+    border-radius: 0;
+    font-size: 1.5rem;
+}
+
+#page_login .login > div:nth-child(1) {
+    border-top: 2px solid #3C4C63;
+}
+
+#page_login .login > .const_left {
+    height: 3.5rem;
+    width: 2rem;
+    float: left;
+}
+
+#page_login .login .fitable_right {
+    width: auto;
+    margin-left: 4rem;
+    height: 3.5rem;
+}
+
+#page_login .login > div img {
+    width: 1.4rem;
+    height: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    float: left;
+}
+
+#page_login .login > div input {
+    background: transparent;
+    outline: none;
+    border: none;
+    height: 2rem;
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #3C4C63;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:#666;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color:#666;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color:#666;
+}
+
+#page_login input[type="checkbox"] + label {
+    float: left;
+    margin: 1.5rem 0;
+    padding: 0;
+    font-size: 1rem;
+    left: 2rem;
+}
+
+#page_login label:before {
+    border: 2px solid #AB9128;
+    left: -2rem;
+    top: -0.1rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    line-height: inherit;
+    color: #AB9128;
+    background: initial;
+}
+
+#page_login input[type="checkbox"]:checked + label:before {
+    font-size: 0.8rem;
+    color: #AB9128;
+    content: '\2714';
+    line-height: 1.3rem;
+}
+
+#page_login .button {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.7rem;
+    padding: 0;
+    margin: 0.5rem 0;
+    line-height: 3rem;
+    color: #1a1a1a;
+    background: #FFE382;
+    font-weight: 100;    
+}
+
+#page_login .copyright {
+    height: 2rem;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+#page_login span {
+    float: right;
+    padding-right: 1.5rem;
+}
+
+</style>

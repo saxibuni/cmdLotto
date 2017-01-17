@@ -1,0 +1,47 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"BluetoothSerial\"><param name=\"ios-package\" onload=\"true\" value=\"MEGBluetoothSerial\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-bluetooth-serial": {
+            "PACKAGE_NAME": "com.cmdlotto"
+        },
+        "cordova-plugin-websocket": {
+            "PACKAGE_NAME": "com.cmdlotto"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.cmdlotto"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-bluetooth-serial/www/bluetoothSerial.js",
+            "id": "cordova-plugin-bluetooth-serial.bluetoothSerial",
+            "pluginId": "cordova-plugin-bluetooth-serial",
+            "clobbers": [
+                "window.bluetoothSerial"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-bluetooth-serial": "0.4.5",
+        "cordova-plugin-websocket": "0.12.0",
+        "cordova-plugin-whitelist": "1.2.0"
+    }
+}

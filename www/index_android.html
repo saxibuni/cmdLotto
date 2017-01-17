@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CMD LOTTO MOBILE</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    	<meta name="viewport" content="width=device-width, target-densitydpi=high-dpi, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+	    <meta name="format-detection" content="telephone=no" />	    
+	    <meta http-equiv="Pragma" CONTENT="no-cache">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	    <link rel="stylesheet" type="text/css" href="appframework-3.0/af.ui.css" />
+	    <link rel="stylesheet" type="text/css" href="appframework-3.0/icons.css" />
+	    <link rel="stylesheet" href="css/base.css">
+		
+	    <script type="text/javascript" charset="utf-8" src="cordova/android/cordova.js"></script>
+	    <script type="text/javascript" charset="utf-8" src="appframework-3.0/jquery-2.1.1.js"></script>
+	    <script type="text/javascript" charset="utf-8" src="appframework-3.0/jquery.cookie.js"></script>
+	    <script type="text/javascript" charset="utf-8" src="appframework-3.0/appframework.ui.js"></script>
+
+		<script type="text/javascript" charset="utf-8" src="js/common/boot.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/common/page.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/common/locale.js"></script>		
+		<script type="text/javascript" charset="utf-8" src="js/common/popup.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/common/storage.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/common/service.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/common/const.js"></script>		
+
+		<script type="text/javascript" charset="utf-8" src="js/controller/main.js"></script>	
+		<script type="text/javascript" charset="utf-8" src="js/controller/Login.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/SelectBetTypes.js"></script>
+		<!--
+		<script type="text/javascript" charset="utf-8" src="js/controller/BetTypeOne.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/BetTypeTwo.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/BetTypeThree.js"></script>
+		-->
+		<script type="text/javascript" charset="utf-8" src="js/controller/BetTop.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/BetRoll.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/BetBottom.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/BetFix.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/BetReport.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/TicketDetail.js"></script>				
+		<script type="text/javascript" charset="utf-8" src="js/controller/Statement.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/BetRule.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/ResultReward.js"></script>		
+		<script type="text/javascript" charset="utf-8" src="js/controller/ChangePassword.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/ChangeLanguage.js"></script>		
+		<script type="text/javascript" charset="utf-8" src="js/controller/LeftNav.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controller/PrinterSettging.js"></script>				
+
+		<script>
+			$.afui.useOSThemes=false; //禁止自动选择皮肤
+			$.afui.openLinksNewTab=false;
+			$.afui.splitview=false;//禁止大于某个分辨率自动展开菜单
+		</script>
+
+		<style>
+			@media screen and (min-width: 240px){html{font-size:9px;}}
+			@media screen and (min-width: 320px){html{font-size:12px;}}
+			@media screen and (min-width: 380px){html{font-size:14px;}}
+			@media screen and (min-width: 420px){html{font-size:16px;}}
+			@media screen and (min-width: 450px){html{font-size:17px;}}
+			@media screen and (min-width: 480px){html{font-size:18px;}}
+			@media screen and (min-width: 540px){html{font-size:20.25px;}}
+			@media screen and (min-width: 600px){html{font-size:22px;}}
+			@media screen and (min-width: 640px){html{font-size:24px;}}
+			@media screen and (max-width: 640px){.loadingClass{font-size: 1.5rem;}  .loading{font-size: 2rem;} }
+    	</style>
+
+	</head>
+	<body>
+		<div id="afui">
+			<div id="splashscreen">
+				<h1 class="loadingClass">Welcome to CMD LOTTO Mobile</h1>
+				<span class="icon loading">loading...</span>
+			</div>
+
+			<div class="view" id="page_login">
+				<div class="pages">
+					<div class="panel active" id="login" data-include="login.html">
+				</div>
+				</div>
+			</div>
+
+			<div class="view" id="mainView">
+				<header>
+					<a class="menuButton" id="menuButton" data-left-menu="leftMenu"></a>
+					<h1 id="app_head"></h1>
+					<a class="backMenu" id="backMenu" href="#selectBetTypes" data-transition="slide-left"></a>
+				</header>
+
+				<div class="pages">
+					<!--selectBetTypes 类型选择-->
+					<div class="panel" id="selectBetTypes" data-include="selectBetTypes.html"></div>
+					
+					<!--betType1 下注类型-->
+					<!--
+					<div class="panel" id="betTypeOne" data-include="betTypeOne.html"></div>
+					<div class="panel" id="betTypeTwo" data-include="betTypeTwo.html"></div>				
+					<div class="panel" id="betTypeThree" data-include="betTypeThree.html"></div>
+					-->
+					<div class="panel" id="betTop" data-include="betTop.html"></div>
+					<div class="panel" id="betBottom" data-include="betBottom.html"></div>
+					<div class="panel" id="betRoll" data-include="betRoll.html"></div>
+					<div class="panel" id="betFix" data-include="betFix.html"></div>
+
+					
+					<!--betReport 下注报表-->
+					<div class="panel" id="betReport" data-include="betReport.html"></div>
+
+					<div class="panel" id="ticketDetail" data-include="ticketDetail.html"></div>				
+
+					<!--betRules  下注规则-->
+					<div class="panel" id="betRule" data-include="betRule.html"></div>
+
+					<!--resultReward  结果奖励-->
+					<div class="panel" id="resultReward" data-include="resultReward.html"></div>
+					
+					<!--changePassword  修改密码-->
+					<div class="panel" id="changePassword" data-include="changePassword.html"></div>
+
+					<!--statement  报表-->
+					<div class="panel" id="statement" data-include="statement.html"></div>
+
+					<div class="panel" id="changeLanguage" data-include="changeLanguage.html"></div>
+					
+					<div class="panel" id="PrinterSettging" data-include="printerSettging.html"></div>
+					
+				</div>
+
+				<footer>
+					<span class="footLogo"></span>
+					<span class="footText">Copyright CMDLOTTO @ 2015</span>
+				</footer>
+
+				<nav id="leftMenu">
+					<div class="view active" id="menuView">
+						<div class="pages">
+							<div class="panel active" id="leftNav">
+								<div class="acctinfo">
+									<ul>
+										<li id="uId"></li>
+										<li><font key="DRAW_DATE">Draw Date</font><span id="nav_date"></span></li>
+										<li><font key="BET_CREDIT">Bet Credit</font><span id="nav_rmLimit" style="color:#fbe183"></span></li>
+										<li><font key="GIVEN_CREDIT">Given Credit</font><span id="nav_crLimit"></span></li>
+										<li><font key="OUTSTANDING">Outstanding</font><span id="nav_betAmt"></span><span style="display:none" id="nav_batAmt_num"></span></li>
+										<li><font key="BALANCE">Balance</font><span id="nav_balAmt"></span></li>
+									</ul>
+								</div>
+
+
+								<ul class="list">
+									<li><a href="#selectBetTypes" key="SELECT_BET_TYPE">Select Bet Types</a></li>
+									<li><a href="#betReport" key="BET_REPORT">Bet Report</a></li>
+									<li><a href="#statement" key="STATEMENT">Statement</a></li>
+									<li><a href="#resultReward" key="RESULT_REWARD">Result Reward</a></li>
+									<li><a href="#betRule" key="BET_RULE">Bet Rules</a></li>
+									<li><a href="#changePassword" key="CHANGE_PWD">Change Password</a></li>
+									<li><a href="#changeLanguage" key="CHANGELANGUAGE">Change Language</a></li>
+									<li><a href="#PrinterSettging" key="PIRNT_SETTING">Printer Setting</a></li>
+									<li><a href="javascript:;" id="logOut" key="LOGOUT">Logout</a></li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+				</nav>
+
+			</div>
+
+
+
+		</div>
+	</body>
+</html>
